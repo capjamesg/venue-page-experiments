@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lowdown Coffee, Edinburgh</title>
+        <style>
+            :root {
+                --primary-color: darkgreen;
+            }
+            * {
+                font-family: 'Inter', sans-serif;
+                line-height: 1.5;
+            }
+            html, body, h1 {
+                padding: 0;
+                margin: 0;
+            }
+            dt {
+                font-weight: bold;
+                margin-top: 1em;
+            }
+            dd {
+                margin-left: 1em;
+            }
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            #social {
+                margin-top: 1em;
+            }
+            #social li {
+                display: inline;
+                margin-right: 1em;
+            }
+            #social li a {
+                text-decoration: none;
+            }
+            a {
+                color: var(--primary-color);
+            }
+            main {
+                max-width: 40em;
+                margin: 0 auto;
+                background-color: #f7f7f7;
+                padding: 10px;
+                border-left: 2px solid darkgrey;
+                border-right: 2px solid darkgrey;
+            }
+            #breadcrumbs {
+                list-style-type: none;
+                padding-left: 0;
+                margin-top: 1em;
+            }
+            #breadcrumbs li {
+                display: inline;
+            }
+            #breadcrumbs li a {
+                text-decoration: none;
+            }
+            #breadcrumbs li:not(:last-child):after {
+                content: ">";
+                margin-left: 0.5em;
+                margin-right: 0.5em;
+            }
+            #photo_grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                grid-gap: 10px;
+                list-style-type: none;
+                padding-left: 0;
+            }
+            #photo_grid li {
+                margin-bottom: 10px;
+            }
+            #photo_grid img {
+                width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="h-card">
+            <ul id="breadcrumbs">
+                <li><a href="/">Home</a></li>
+                <li><a href="/coffee/maps/edinburgh/" class="p-category">Edinburgh</a></li>
+                <li><a href="/coffee/maps/edinburgh/lowdown-coffee/" class="u-url u-uid">Lowdown Coffee</a></li>
+            </ul>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@id": "/",
+                        "name": "Home"
+                    }
+                    },
+                    {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@id": "/coffee/maps/edinburgh/",
+                        "name": "Edinburgh"
+                    }
+                    },
+                    {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@id": "/coffee/maps/edinburgh/lowdown-coffee/",
+                        "@type": "ItemList",
+                        "name": "Lowdown Coffee",
+                        "url": "/coffee/maps/edinburgh/lowdown-coffee/"
+                    }
+                    }
+                ]
+                }
+                        </script>
+            <h1 class="p-name">Lowdown Coffee</h1>
+            <p class="p-summary">Lowdown Coffee is a speciality coffee shop in the heart of Edinburgh, Scotland.</p>
+            <ul id="social">
+                <li><a href="https://www.instagram.com/lowdown_coffee/" class="u-url"><img src="https://tantek.com/images/instagram-16x16.png" style="margin-bottom: -3px">&nbsp; Instagram</a></li>
+                <li><a href="https://lowdowncoffee.com/" class="u-url">🌐 Website</a></li>
+            </ul>
+            <h2>About</h2>
+            <dl class="e-note">
+                <dd>
+                    <dt>Address</dt>
+                    <dd>
+                        <span class="p-street-address">40 George St</span>,
+                        <span class="p-locality p-region">Edinburgh</span>
+                        <span class="p-postal-code">EH2 2LE</span>
+                        <span class="p-country-name">United Kingdom</span>
+                    </dd>
+                </dd>
+                <dd>
+                    <dt>Hours</dt>
+                    <dd>Monday to Saturday: 9:30am - 5:30pm<br>Sunday: 10am - 5pm</dd>
+                </dd>
+                <dd>
+                    <dt>Nearby Transportation</dt>
+                    <dd>City of Edinburgh centre bus routes. Waverley station is ten minutes away on foot.</dd>
+                </dd>
+            </dl>
+            <h2>Food and Drink</h2>
+            <ul>
+                <li>☕ Speciality Coffee</li>
+                <li>🥐 Pastries</li>
+                <li>🌱 Vegan options available</li>
+                <li>💳 Card only</li>
+                <li>🗄️ Sells retail coffee</li>
+            </ul>
+            <h2>Location</h2>
+            <embed src="https://www.openstreetmap.org/export/embed.html?bbox=-3.2001166343688965%2C55.951995999999995%2C-3.195737838745117%2C55.95455099999999&amp;layer=mapnik&amp;marker=55.95327318689572%2C-3.197927226007099" style="border: 1px solid black" width="100%" height="350px" frameborder="0"></embed>
+            <h2>Photos</h2>
+            <ul id="photo_grid">
+                <li>
+                    <img src="https://jamesg.blog/assets/lowdown_coffee.png" alt="Lowdown Coffee" class="u-photo">
+                </li>
+            </ul>
+        </main>
+    </body>
+</html>
